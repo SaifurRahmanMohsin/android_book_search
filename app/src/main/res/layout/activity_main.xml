@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.puiyeetong.booklisting.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/search_box"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_marginLeft="10dp"
+            android:padding="@dimen/list_item_padding"
+            android:hint="Enter search terms ..."
+            android:background="@color/search_box_color" />
+        
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Search" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/instruction_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/list_item_padding"
+        android:textSize="@dimen/instruction_text_size"
+        android:textStyle="bold"
+        android:text="Enter search terms in the box above and press enter." />
+
+    <TextView
+        android:id="@+id/empty_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/list_item_padding"
+        android:textSize="@dimen/instruction_text_size"
+        android:textStyle="bold"
+        android:text="There is no book returned."
+        android:visibility="gone" />
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="true"
+        android:orientation="vertical" />
+
+</LinearLayout>

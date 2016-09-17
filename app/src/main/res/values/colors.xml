@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#167cca</color>
+    <color name="colorPrimaryDark">#5aa4dc</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Background color for app -->
+    <color name="tan_background">#FFF7DA</color>
+
+    <!-- Color for search box -->
+    <color name="search_box_color">#ebf5ff</color>
+</resources>
